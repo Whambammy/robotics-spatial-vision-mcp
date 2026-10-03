@@ -1,0 +1,50 @@
+{
+  "$schema": "https://smithery.ai/schema/config.json",
+  "name": "robotics-spatial-vision-mcp",
+  "displayName": "WHAM // Robotics & Spatial Vision MCP",
+  "description": "Point cloud ICP alignment, Recast navmesh baking, robot arm inverse kinematics, and LIDAR ground plane filtering for physical AI agents.",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@whambammy/robotics-spatial-vision-mcp"
+  ],
+  "environment": {
+    "PAYMENT_WALLET": {
+      "type": "string",
+      "description": "Base L2 EVM payout wallet address to receive USDC micropayments",
+      "required": false,
+      "default": "0x9793E7269b3301893318dEa8338576Ba612F39B3"
+    },
+    "BASE_RPC_URL": {
+      "type": "string",
+      "description": "Base L2 RPC endpoint",
+      "required": false,
+      "default": "https://mainnet.base.org"
+    }
+  },
+  "capabilities": {
+    "tools": true
+  },
+  "tools": [
+    {
+      "name": "pointcloud_icp_rigid_registration",
+      "description": "Iterative Closest Point (ICP) algorithm aligning two unorganized 3D point clouds with robust Tukey loss weighting to filter noisy scan outliers. (0.045 USDC on Base L2)"
+    },
+    {
+      "name": "navmesh_recast_baking_validator",
+      "description": "Generates and audits Recast 3D navigation meshes for autonomous agents, checking maximum slope climbing, step-height clearance, and unreachable islands. (0.040 USDC on Base L2)"
+    },
+    {
+      "name": "robot_arm_inverse_kinematics_ccd",
+      "description": "Cyclic Coordinate Descent (CCD) and FABRIK solver computing 6-DOF robotic manipulator joint angles with strict joint-angle limit enforcement. (0.040 USDC on Base L2)"
+    },
+    {
+      "name": "lidar_ground_plane_ransac_filter",
+      "description": "RANSAC plane segmentation isolating ground terrain from foreground obstacles and vehicles in dense unorganized LIDAR point clouds. (0.035 USDC on Base L2)"
+    },
+    {
+      "name": "camera_intrinsics_projection_matrix",
+      "description": "Computes 4x4 perspective and orthographic camera projection matrices, mapping FOV, focal length, sensor dimensions, and near/far clipping planes. (0.020 USDC on Base L2)"
+    }
+  ]
+}

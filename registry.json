@@ -1,0 +1,52 @@
+{
+  "pointcloud_icp_rigid_registration": {
+    "name": "pointcloud_icp_rigid_registration",
+    "description": "Iterative Closest Point (ICP) algorithm aligning two unorganized 3D point clouds with robust Tukey loss weighting to filter noisy scan outliers.",
+    "price_usdc": "0.045",
+    "domain": "Spatial Alignment & Robotics",
+    "category": "Spatial / 3D",
+    "path": "ecosystem/tools/pointcloud_icp_rigid_registration",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "navmesh_recast_baking_validator": {
+    "name": "navmesh_recast_baking_validator",
+    "description": "Generates and audits Recast 3D navigation meshes for autonomous agents, checking maximum slope climbing, step-height clearance, and unreachable islands.",
+    "price_usdc": "0.040",
+    "domain": "AI Pathfinding & Navigation",
+    "category": "Spatial / 3D",
+    "path": "ecosystem/tools/navmesh_recast_baking_validator",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "robot_arm_inverse_kinematics_ccd": {
+    "name": "robot_arm_inverse_kinematics_ccd",
+    "description": "Cyclic Coordinate Descent (CCD) and FABRIK solver computing 6-DOF robotic manipulator joint angles with strict joint-angle limit enforcement.",
+    "price_usdc": "0.040",
+    "domain": "Robotics & Kinematics",
+    "category": "Spatial / 3D",
+    "path": "ecosystem/tools/robot_arm_inverse_kinematics_ccd",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "lidar_ground_plane_ransac_filter": {
+    "name": "lidar_ground_plane_ransac_filter",
+    "description": "RANSAC plane segmentation isolating ground terrain from foreground obstacles and vehicles in dense unorganized LIDAR point clouds.",
+    "price_usdc": "0.035",
+    "domain": "Point Cloud Segmentation",
+    "category": "Spatial / 3D",
+    "path": "ecosystem/tools/lidar_ground_plane_ransac_filter",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "camera_intrinsics_projection_matrix": {
+    "name": "camera_intrinsics_projection_matrix",
+    "description": "Computes 4x4 perspective and orthographic camera projection matrices, mapping FOV, focal length, sensor dimensions, and near/far clipping planes.",
+    "price_usdc": "0.020",
+    "domain": "Computer Vision & Optics",
+    "category": "Spatial / 3D",
+    "path": "ecosystem/tools/camera_intrinsics_projection_matrix",
+    "deployedAt": "2026-09-16 07:21:53",
+    "status": "active"
+  }
+}
